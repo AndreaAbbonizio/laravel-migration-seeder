@@ -49,11 +49,11 @@
             <td>{{$singleTrain->orario_di_arrivo}}</td>
             <td>{{$singleTrain->codice_treno}}</td>
             <td>{{$singleTrain->numero_carrozze}}</td>
-            <td>{{$singleTrain->in_orario}}</td>
+            <td>{{$singleTrain->in_orario ? 'in orario' : 'in ritardo'}}</td>
         
         
             
-            <td>{{$singleTrain->cancellato}}</td>
+            <td>{{$singleTrain->cancellato ? 'cancellato' : ''}}</td>
 
 
           </tr>   
